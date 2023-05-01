@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+   
+  </head>
+  <body>
+
+    <div id="div-click" class="badge badge-primary text-wrap " style="font-size:1rem">Bana Tıkla</div><br/>
+    <img id="resim" name="resim" src="../resim/chess-5516446_1920.jpg" width="400" height="400" style="position: relative; left:15px" />
+
+<div class="m-5" id="div-id">
+  <p id="paragraf-id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deserunt sint vitae commodi inventore ratione incidunt nesciunt suscipit soluta mollitia.</p>  
+
+  
+
+  <button class="btn btn-primary mt-5" id="show" name="show"  > Show </button>
+  <button class="btn btn-danger mt-5"  id="hide" name="hide"> Hide </button>
+  <button class="btn btn-dark mt-5"  id="toggle" name="toggle"> Toggle </button><br/>
+
+  <button class="btn btn-warning mt-5"  id="fade-in" name="fade-in" > FadeIn</button>
+  <button class="btn btn-warning mt-5"  id="fade-out" name="fade-out" > FadeOut</button>
+  <button class="btn btn-warning mt-5"  id="fade-toggle" name="fade-toggle" > FadeToggle</button>
+  <button class="btn btn-warning mt-5"  id="fade-to" name="fade-to" > FadeTo</button><br/>
+
+  <button class="btn btn-info mt-5" id="slide-down" name="slide-down" > SlideDown </button>
+  <button class="btn btn-info mt-5" id="slide-up" name="slide-up" > SlideUp </button>
+  <button class="btn btn-info mt-5" id="slide-toggle" name="slide-toggle" > SlideToggle </button><br/>
+
+  <button class="btn btn-dark mt-5" id="animate" name="animate"  > Animate </button>
+  <button class="btn btn-primary mt-5" id="stop" name="stop"  > stop </button>
+</div>
+
+
+   
+    <!-- SHOW HIDE-->
+ <script>
+      $(document).ready(function () { 
+        $("#hide").click(function () { 
+          $("#paragraf-id").hide(2000);
+         });
+       });
+
+       $(document).ready(function () { 
+        $("#show").click(function () { 
+          $("#paragraf-id").show(2000,function () { alert("gösterildi") });
+         });
+       });
+
+       $(document).ready(function () { 
+        $("#toggle").click(function () { 
+          $("#paragraf-id").toggle(2000);
+         });
+       });
+</script>
+
+
+  <!-- FADE-->
+<script>
+$(document).ready(function () { 
+         $("#fade-in").click(function () {
+          $("#paragraf-id").fadeIn(1000,function () { alert("fade-in") });
+           });
+        })
+
+        $(document).ready(function () { 
+         $("#fade-out").click(function () {
+          $("#paragraf-id").fadeOut(1000,function () { alert("fade-out") });
+           });
+        })
+
+        $(document).ready(function () { 
+         $("#fade-toggle").click(function () {
+          $("#paragraf-id").fadeToggle(1000,function () { alert("fade-toggle") });
+           });
+        })
+
+
+        $(document).ready(function () { 
+         $("#fade-to").click(function () {
+          $("#paragraf-id").fadeIn(2000,function () { alert("fade-to") });
+           });
+        })
+</script>
+
+  <!-- SLİDE -->
+<script>
+$(document).ready(function () { 
+$("#slide-down").click(function () { 
+  $("#paragraf-id").slideDown(1000);
+ })
+ });
+
+ $(document).ready(function () { 
+$("#slide-toggle").click(function () { 
+  $("#paragraf-id").slideToggle(1000);
+ })
+ });
+
+ $(document).ready(function () { 
+$("#slide-up").click(function () { 
+  $("#paragraf-id").slideUp(1000);
+ })
+ });
+
+</script>
+
+
+  <!-- ANİMATE -->
+<script>
+$(document).ready(function () {
+$("#animate").click(function () {
+  $("#paragraf-id").animate({
+    width:200,
+    height:200,
+    opacity:.7,
+    left:40,
+    right:40
+  });
+  });
+  });
+</script>
+<script>
+  $(document).ready(function () {
+  $("#div-click").click(function () {
+    $("#resim").animate({
+     left: "+=45",
+     height:400,
+     opacity:.7
+    },3000,function name() {
+      alert("animate bitti")
+    });
+    });
+  
+    });
+  </script>
+
+  <script>
+$(document).ready(function () { 
+$("#stop").click(function () { 
+  $("#resim").stop();
+  
+ });
+
+ })
+
+  </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

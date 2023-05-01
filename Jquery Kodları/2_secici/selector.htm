@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="a003_detayliSelector.js"></script>
+</head>
+<body>
+    
+
+<p>Normal tag</p>
+<p id="id-jquery"> id tag</p>
+<p class="class-jquery">class tag</p>
+<ul>
+    <li>eleman-1</li>
+    <li>eleman-2</li>
+    <li>eleman-3</li>
+</ul>
+
+<table border="1" width="100%">
+<caption>Başlık</caption>
+<tbody>
+<tr>
+    <td>1.satın 1.sutun</td>
+    <td>1.satın 2.sutun</td>
+    <td>1.satın 3.sutun</td>
+    <td>1.satın 4.sutun</td>
+    <td>1.satın 5.sutun</td>
+</tr>
+
+<tfoot>
+    <tr>
+        <td  colspan="5">Footer</td>
+    </tr>
+</tfoot>
+</tbody>
+</table>
+
+<button>Tıkla</button>
+<!-- FORM NESNESİ -->
+
+<h1>H1 tag</h1>
+<h2>H2 tag</h2>
+<h3>H3 tag</h3>
+
+<form>
+<input type="text" value="text" /> <br/>
+<input type="radio" name="sadsa" /><br/>
+<input type="checkbox" value="text" /><br/>
+<input type="button" value="input-button" /><br/>
+<input type="file" value="text" /><br/>
+
+
+<button type="button" id="deneme">Tıklayın</button>
+</form>
+
+<div>
+    <p>Div içindeki paragraf</p>
+</div>
+
+<p>dışardaki paragraf</p>
+
+
+<!-- $(document).ready(function (){
+
+    $("#deneme").click(function (){
+        $("tr td:first").css("background-color","yellow").css("height","105px");
+       });
+    }); -->
+
+<!-- <script>
+    $(document).ready(function () { 
+     $("button").click(function () {  
+      
+          $('p').hide();
+          //$('#id-jquery').hide();
+          //$('.class-jquery').hide();
+          //$('*').hide();
+          //$("ul li").hide();
+          //$("ul li:first").hide();
+          //$("ul li:first-chield").hide();
+         // $("tr td").hide();
+         //$("tr:even").hide();
+         //$("tr:odd").hide();
+        });
+     });
+    </script> -->
+</body>
+</html>

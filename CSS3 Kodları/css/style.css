@@ -1,0 +1,41 @@
+table thead{
+    background-color: black;
+    color:white;
+    border:none;
+    
+}
+
+table{
+    width: 100%;
+    cursor: pointer; 
+    border-collapse:collapse;
+}
+
+table thead tr th{
+    color:white;
+    font-size: 18px;
+    padding:8px;
+    text-transform: capitalize ;
+    
+}
+
+tbody{
+    background-color: black;
+    color:white;
+}
+
+ tr:nth-of-type(even){
+    background-color: slateblue;
+}
+
+tr:hover{
+    background-color: rgb(58, 8, 58);
+}
+
+thead tr>th:nth-child(1) {
+    background-color: springgreen;
+}
+
+tr>td:first-child{
+    background-color: royalblue;
+}
